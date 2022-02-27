@@ -1,0 +1,224 @@
+
+
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Importing component files */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+
+
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  background-image:  linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 50%), url(background.jpg);   
+  background-size: cover; 
+  padding:  20% 0%;    
+  background-position: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.text {
+  text-align: center;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0,8;
+  margin-bottom: 40px;
+}
+
+      .button {
+        border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #eeeeee;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: lightblue;
+        padding: 15px 50px;
+        margin: 0 auto;
+      }
+      .button span {
+        position: relative;
+        z-index: 1;
+      }
+      .button:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 470%;
+        width: 140%;
+        background: #14adc6;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+        transform: translateX(-100%) translateY(-25%) rotate(45deg);
+      }
+      .button:hover:after {
+        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      }
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  margin: 10px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 0.3);
+  border-radius: 10px;
+  background-color: white;
+}
+.card img {
+  width: 150px;
+}
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.card {
+  border: 6px solid transparent;
+  transition: all 1s ;
+}
+
+.card:hover {
+  border-left: 3px solid rgb(0 0 0 / 0.6);
+  margin-left: 3%;
+  
+}
+
+.row{
+flex-wrap: wrap;
+float: left;
+background-color: white;
+margin-left: 15%;
+width: 35%;
+}
+
+.column{
+  flex-wrap: wrap;
+  float: right;
+  background-color: white;
+  margin-right: 15%;
+  width: 35%;
+}
+
+.form{
+  box-shadow: 5px 5px 5px   rgb(0 0 0 / 0.3);
+  border-radius: 10px;
+  background-color: white;
+  border:none;
+  margin-top:150px;
+  margin-left:5%;
+  margin-right:5%;
+
+}
+
+.banner, .cards{
+    
+    animation: fadein 2.75s;
+    -moz-animation: fadein 2.75s; /* Firefox */
+    -webkit-animation: fadein 2.75s; /* Safari et Chrome */
+    -o-animation: fadein 2.75s; /* Opera */
+    animation-timing-function: 2.75s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.text{  
+  animation: slide 2s;
+  -moz-animation: slide 2s; /* Firefox */
+  -webkit-animation: slide 2s; /* Safari et Chrome */
+  -o-animation: slide 2s; /* Opera */
+  position: relative;
+  animation-name: slide;
+  animation-duration: 2s;
+  
+}
+@keyframes slide {
+  from  {left:0px; top:-200px; opacity: 0;}
+  to {left:0px; top:0px; opacity: 1;}
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from  {left:0px; top:-200px; opacity: 0;}
+  to {left:0px; top:0px; opacity: 1;}
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from  {left:0px; top:-200px; opacity: 0;}
+  to {left:0px; top:0px; opacity: 1;}
+}
+@-o-keyframes fadein { /* sur Opera */
+  from  {left:0px; top:-200px; opacity: 0;}
+  to {left:0px; top:0px; opacity: 1;}
+}
+
